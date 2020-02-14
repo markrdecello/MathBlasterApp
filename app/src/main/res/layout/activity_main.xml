@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/math_blaster"
+        android:text="Math Blaster App"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/instruction"
+        android:gravity="center"
+        android:layout_below="@+id/math_blaster"
+        android:text="Please sum the list of numbers below:"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/numbers"
+        android:layout_below="@id/instruction"
+        android:text="Show the list of numbers here"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"/>
+    
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/sum_input"
+        android:layout_below="@id/numbers"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:layout_marginTop="25dp"
+        android:inputType="number"
+        android:hint="Enter your number here" />
+    
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/sum_input"
+        android:id="@+id/check"
+        android:layout_centerHorizontal="true"
+        android:text="Check"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/result"
+        android:layout_below="@id/check"
+        android:text="Correct or Wrong"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:id="@+id/next"
+        android:layout_below="@id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Next Question"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
